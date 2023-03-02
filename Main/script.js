@@ -85,7 +85,7 @@ function saveScore() {
     };
     scores.push(userScore);
     localStorage.setItem("scores", JSON.stringify(scores));
-    window.location.href = "highscores.html";
+    window.open('highscores.html');
   }
 }
 

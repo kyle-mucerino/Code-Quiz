@@ -1,5 +1,5 @@
 function showHighscores() {
-  var highscores = JSON.parse(window.localStorage.getItem('highscores')) || [];
+  var highscores = JSON.parse(window.localStorage.getItem('scores')) || [];
 
   highscores.sort(function (a, b) {
     return b.score -a.score;
@@ -14,7 +14,7 @@ function showHighscores() {
 }
 
 function clearHighscores() {
-  window.localStorage.removeItem('highscores');
+  window.localStorage.removeItem('scores');
   window.location.reload();
 }
 
